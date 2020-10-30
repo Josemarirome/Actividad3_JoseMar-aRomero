@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="danger"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Datos personales</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-text color="black" *ngFor="let datosPersonales of datosPersonales">
+    <h5>- <b>Nombre: </b>{{datosPersonales.nombre}}</h5>
+    <h5>- <b>Apellidos: </b>{{datosPersonales.apellido}}</h5>
+    <h5>- <b>DNI: </b>{{datosPersonales.dni}}</h5>
+    <h5>- <b>Dirección: </b>{{datosPersonales.direccion}}</h5>
+    <h5>- <b>Población: </b>{{datosPersonales.poblacion}}</h5>
+  </ion-text>
+</ion-content>
